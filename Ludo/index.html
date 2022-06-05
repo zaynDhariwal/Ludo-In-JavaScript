@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ludo Game Design Using HTML & CSS Only</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+
+<body>
+    
+	 <div class="container card">
+	 	<!-- First Row -->
+	 	 <div class="container-row1 clearfix">
+            <div class="row1-col1 green">
+                <div class="row1-col1-child clearfix white">
+                    <div class="green" id="green01"><div class="ggot"onclick="move(this.id)" id="green1"></div></div>
+                    <div class="green" id="green02"><div class="ggot"onclick="move(this.id)" id="green2"></div></div>
+                    <div class="green" id="green03"><div class="ggot"onclick="move(this.id)" id="green3"></div></div>
+                    <div class="green" id="green04"><div class="ggot"onclick="move(this.id)" id="green4"></div></div>
+                </div>
+            </div>
+            <div class="row1-col2 clearfix">
+                <div  class=" whites rp24 gp11 bp37 yp50"style="background-color: white;"></div>
+                <div  class="rp25 gp12  whites  bp38 yp51"style="background-color: white;"></div>
+                <div class="rp26 gp13 bp39  whites "style="background-color: white;"></div>
+                <div  class="rp23 gp10 bp36 yp49  whites "style="background-color: white;"></div>
+                <div class="yellow yp52"></div>
+                <div class="yellow rp27 gp14 yp1 bp40"></div>
+                <div  class="rp22 gp9 bp35 yp48  yellow "></div>
+                <div class="yellow yp53"></div>
+                <div class="rp28 gp15 yp2  whites  bp41"style="background-color: white;"></div>
+                <div class="rp21 gp8 bp34 yp47  whites "style="background-color: white;"></div>
+                <div class="yellow yp54"></div>
+                <div class="rp29 gp16 yp3 bp42  whites "style="background-color: white;"></div>
+                <div  class="rp20 gp7 bp33 yp46  whites "style="background-color: white;"></div>
+                <div class="yellow yp55"></div>
+                <div class="rp30 gp17 yp4 bp43  whites " style="background-color: white;"></div>
+                <div  class="rp19 gp6 bp32 yp45  whites style="background-color: white;""></div>
+                <div class="yellow yp56"></div>
+                <div class="rp31 gp18 yp5 bp44  whites "style="background-color: white;"></div>
+            </div>
+            <div class="row1-col3 yellow">
+                <div class="row1-col3-child clearfix white">
+                    <div class="yellow" id="yellow01"><div class="ygot"onclick="move(this.id)" id="yellow1"></div></div>
+                    <div class="yellow" id="yellow02"><div class="ygot"onclick="move(this.id)" id="yellow2"></div></div>
+                    <div class="yellow" id="yellow03"><div class="ygot"onclick="move(this.id)" id="yellow3"></div></div>
+                    <div class="yellow" id="yellow04"><div class="ygot"onclick="move(this.id)" id="yellow4"></div></div>
+
+                </div>
+            </div>
+        </div>
+
+	 <!-- Second row -->
+        <div class="container-row2 clearfix">
+            <div class="row2-col1 clearfix">
+                <div  class="rp13 bp26 yp39  whites " style="background-color: white;"></div>
+                <div class="green rp14 gp1 bp27 yp40"></div>
+                <div  class="rp15 gp2 bp28 yp41 whites "style="background-color: white;"></div>
+                <div  class="rp16 gp3 bp29 yp42 whites "style="background-color: white;"></div>
+                <div  class="rp17 gp4 whites "style="background-color: white;"></div>
+                <div  class="rp18 gp5 bp31 yp44 whites "style="background-color: white;"></div>
+                <div  class="rp12 bp25 gp51 yp38 whites "style="background-color: white;"></div>
+                <div class="green gp52"></div>
+                <div class="green gp53"></div>
+                <div class="green gp54"></div>
+                <div class="green gp55"></div>
+                <div class="green gp56"></div>
+                <div  class="rp11 bp24 gp50 whites  yp37"style="background-color: white;"></div>
+                <div  class="rp10 bp23 gp49 whites  yp36"style="background-color: white;"></div>
+                <div  class="rp9 bp22 gp48 green  yp35"></div>
+                <div  class="rp8 bp21 gp47 yp34 whites "style="background-color: white;"></div>
+                <div class="rp7 bp20 gp46 whites  yp33"style="background-color: white;"></div>
+                <div class="rp6 bp19 gp45 whites  yp32"style="background-color: white;"></div>
+            </div>
+            <div class="row2-col2">
+                <!-- add triangular effect using html and css -->
+                <div class="contain-triangles">
+                    <div class="triangle-right"></div>
+                    <div class="triangle-up"></div>
+                    <div class="triangle-left"></div>
+                    <div class="triangle-down"></div>
+                </div>
+            </div>
+            <div class="row2-col3 clearfix">
+                <div  class="rp32 gp19 yp6 bp45 whites "style="background-color: white;"></div>
+                <div class="rp33 gp20 yp7 bp46 whites "style="background-color: white;"></div>
+                <div class="rp34 gp21 yp8 bp47 whites "style="background-color: white;"></div>
+                <div class="rp35 gp22 yp9 bp48 blue "></div>
+                <div class="rp36 gp23 yp10 bp49 whites "style="background-color: white;"></div>
+                <div class="rp37 gp24 yp11 bp50 whites "style="background-color: white;"></div>
+                <div class="blue bp56"></div>
+                <div class="blue bp55"></div>
+                <div class="blue bp54"></div>
+                <div class="blue bp53"></div>
+                <div class="blue bp52"></div>
+                <div class="rp38 gp25 yp12 bp51  whites "style="background-color: white;"></div>
+                <div class="rp44 gp31 yp18 bp5 whites "style="background-color: white;"></div>
+                <div class="rp43 gp30 yp17 bp4 whites "style="background-color: white;"></div>
+                <div class="rp42 gp29 yp16 bp3 whites "style="background-color: white;"></div>
+                <div class="rp41 gp28 yp15 bp2 whites "style="background-color: white;"></div>
+                <div class="blue rp40 gp27 yp14 bp1"></div>
+                <div class="rp39 gp26 yp13 whites "style="background-color: white;"></div>
+            </div>
+        </div>
+
+  <!-- Third row -->
+        <div class="container-row3 clearfix">
+            <div class="row3-col1 red">
+                <div class="row3-col1-child clearfix white">
+                    <div class="red" id="red01"><div  class="rgot"onclick="move(this.id)" id="red1"></div></div>
+                    <div class="red" id='red02'><div class="rgot"onclick="move(this.id)" id="red2"></div></div>
+                    <div class="red" id="red03"><div class="rgot"onclick="move(this.id)" id="red3"></div></div>
+                    <div class="red" id="red04"><div class="rgot"onclick="move(this.id)" id="red4"></div></div>
+                </div>
+            </div>
+            <div class="row3-col2 clearfix">
+                <div class=" whites rp5 bp18 gp44 yp31"style="background-color: white;"></div>
+                <div class="red rp56"></div>
+                <div class="rp45 gp32 whites  yp19 bp6"style="background-color: white;"></div>
+                <div class="rp4 bp17 gp43  whites yp30"style="background-color: white;"></div>
+                <div class="red rp55"></div>
+                <div class="rp46 gp33 yp20  whites bp7"style="background-color: white;"></div>
+                <div class="rp3 bp16 gp42 yp29 whites "style="background-color: white;"></div>
+                <div class="red rp54"></div>
+                <div class="rp47 gp34 yp21 bp8 whites "style="background-color: white;"></div>
+                <div class="rp2 bp15 gp41 yp28 whites "style="background-color: white;"></div>
+                <div class="red rp53"></div>
+                <div  class="rp48 gp35 yp22 bp9 red "></div>
+                <div class="red rp1 bp14 gp40 yp27"></div>
+                <div class="red rp52"></div>
+                <div  class="rp49 gp36 yp23 bp10 whites "style="background-color: white;"></div>
+                <div class="bp13 gp39 yp26 whites "style="background-color: white;"></div>
+                <div class="rp51 gp38 yp25 bp12 whites "style="background-color: white;"></div>
+                <div class="rp50 gp37 yp24 bp11 whites "style="background-color: white;"></div>
+            </div>
+            <div class="row3-col3 blue">
+                <div class="row3-col3-child clearfix white">
+                    <div class="blue" id="blue01"><div class="bgot"onclick="move(this.id)" id="blue1"></div></div>
+                    <div class="blue" id="blue02"><div class="bgot"onclick="move(this.id)" id="blue2"></div></div>
+                    <div class="blue" id="blue03"><div id="blue3"onclick="move(this.id)" class="bgot"></div></div>
+                    <div class="blue" id="blue04"><div id="blue4"onclick="move(this.id)" class="bgot"></div></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="disp" style="background-color: aliceblue;">
+            <h4 id="uselesstext1">It`s </h4><h3 id="player"style="float:left; color:red">red</h3><h4 id="uselesstext2">s turn</h4>
+            <p id="badtext" style="float:left;"></p>
+        </div>
+            
+        <div id="dice" onclick="randomNum()">
+        </div>
+
+
+        
+	 </div>
+    
+
+</body>
+</html>
